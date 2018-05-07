@@ -21,7 +21,7 @@ import org.json.JSONObject;
 public class ZencoderService {
 
   private final String apiEndPoint = "https://app.zencoder.com/api/v2/jobs";
-  private final String apiKey      = "23bcd9497bcff16d96ffa32c4f66bd36";
+  private final String apiKey      = System.getenv("ZENCODE_API_KEY");
 
 	public ZencoderService() { }
 

@@ -16,8 +16,8 @@ import java.net.URL;
 public class AWSService {
 
 	private final String bucketName = "musa-sambatest-s3";
-  private final String accessKey  = "AKIAJ6QNQI4JTJ44IF2Q";
-  private final String secretKey  = "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";
+  private final String accessKey  = System.getenv("S3_ACCESS_KEY");
+  private final String secretKey  = System.getenv("S3_SECRET_KEY");
 
   private BasicAWSCredentials credentials;
   private AmazonS3 s3Client;
